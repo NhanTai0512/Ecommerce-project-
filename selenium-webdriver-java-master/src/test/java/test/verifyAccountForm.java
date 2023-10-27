@@ -32,7 +32,7 @@ public class verifyAccountForm {
             registerPage.inputFirstName("Mac");
             registerPage.inputMiddleName("Tran Nhan");
             registerPage.inputLastName("Tai");
-            registerPage.inputEmail("AExample3@gmail.com");
+            registerPage.inputEmail("AExample5@gmail.com");
             registerPage.inputPassword("123456");
             registerPage.InputConfirmPassword("123456");
             registerPage.clickRegisterBtn();
