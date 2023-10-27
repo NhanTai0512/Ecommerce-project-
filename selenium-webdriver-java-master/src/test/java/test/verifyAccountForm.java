@@ -37,7 +37,7 @@ public class verifyAccountForm {
             registerPage.InputConfirmPassword("123456");
             registerPage.clickRegisterBtn();
             try {
-                //driver.findElement(By.className("my-account"));
+                driver.findElement(By.className("my-account"));
                 driver.findElement(By.xpath("//ol[@class='nav-primary']//li[@class='level0 nav-2 last']")).click();
                 driver.findElement(By.className("link-wishlist")).click();
                 driver.findElement(By.xpath("//button[@class='button btn-share']")).click();
