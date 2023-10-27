@@ -41,7 +41,7 @@ public class verifyAccountForm {
                 driver.findElement(By.xpath("//ol[@class='nav-primary']//li[@class='level0 nav-2 last']")).click();
                 driver.findElement(By.className("link-wishlist")).click();
                 driver.findElement(By.xpath("//button[@class='button btn-share']")).click();
-                driver.findElement(By.id("email_address")).sendKeys("AExample1@gmail.com");
+                driver.findElement(By.id("email_address")).sendKeys("AExample5@gmail.com");
                 driver.findElement(By.id("message")).sendKeys("wish");
                 driver.findElement(By.xpath("//div[@class='buttons-set form-buttons']//button[@class='button']")).click();
                 driver.findElement(By.className("success-msg"));
