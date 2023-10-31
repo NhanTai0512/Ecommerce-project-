@@ -20,7 +20,8 @@ public class comparePriceForm {
         try {
 
             driver.get("http://live.techpanda.org/");
-            driver.findElement(By.xpath("//ol[@class='nav-primary']//li[@class='level0 nav-1 first active']")).click();
+            WebElement mobileButton =  driver.findElement(By.linkText("MOBILE"));
+            mobileButton.click();
 
 
             List<WebElement> liElements = driver.findElements(new By.ByClassName("product-info"));
