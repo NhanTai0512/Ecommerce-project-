@@ -21,7 +21,8 @@ public class verifyAccountForm {
         try {
 
             driver.get("http://live.techpanda.org/");
-            driver.findElement(By.xpath("//ol[@class='nav-primary']//li[@class='level0 nav-1 first active']")).click();
+            WebElement mobileButton =  driver.findElement(By.linkText("MOBILE"));
+            mobileButton.click();
             boolean test = false;
 
             driver.findElement(By.xpath("//div[@class='account-cart-wrapper']//a[@Class='skip-link skip-account']")).click();
