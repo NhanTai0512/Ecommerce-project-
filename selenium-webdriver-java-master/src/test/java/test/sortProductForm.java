@@ -21,7 +21,8 @@ public class sortProductForm {
         WebDriver driver = driverFactory.getChromeDriver();
         try {
             driver.get("http://live.techpanda.org/");
-            driver.findElement(By.xpath("//ol[@class='nav-primary']//li[@class='level0 nav-1 first active']")).click();
+            WebElement mobileButton =  driver.findElement(By.linkText("MOBILE"));
+            mobileButton.click();
 
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
