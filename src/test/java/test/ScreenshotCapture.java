@@ -44,7 +44,7 @@ public class ScreenshotCapture {
                 Thread.sleep(5000);
 
                 File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-                String screenshotLocation = "C:\\Users\\thang\\Desktop\\SWT\\selenium-webdriver-java-master\\screenshot.png";
+                String screenshotLocation = "./src/screenshot/screenshot.png";
                 FileUtils.copyFile(screenshotFile, new File(screenshotLocation));
                 System.out.println("Screenshot captured and saved to: " + screenshotLocation);
 
